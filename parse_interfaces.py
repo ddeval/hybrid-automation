@@ -4,7 +4,7 @@ router={
       {
         "name": "GigabitEthernet1",
         "type": "iana-if-type:ethernetCsmacd",
-        "enabled": true,
+        "enabled": True,
         "ietf-ip:ipv4": {
           "address": [
             {
@@ -19,3 +19,6 @@ router={
     ]
   }
 }
+
+print(router["ietf-interfaces:interfaces"]["interface"][0]["enabled"])
+
